@@ -2,9 +2,15 @@
 ## Linee guida del progetto
 <ol>
   <li>
-    <p>Implementare una barra di ricerca in cui l'utente possa inserire una categoria letteraria</p>
+    <p>Implementare una barra di ricerca (Google style) in cui l'utente possa inserire una categoria letteraria</p>
     <img src="img/1.jpg">
   </li>
-  <li>Premendo "invio" ho l'apposito pulsante di ricerca l'utente può visualizzare i titolo, copertina e autori dei libri appartenenti alla categoria richiesta</li>
-  <li>Attraverso l'apposto pulsante l'utente può visualizzare la descrizione del libro</li>
+  <li>
+    <p>Premendo "invio" o cliccando l'apposito pulsante di ricerca l'utente può visualizzare il titolo, la copertina e gli autori dei libri appartenenti alla categoria richiesta</p>
+    <img src="img/2.jpg">
+  </li>
+  <li>
+    <p>Attraverso l'apposto pulsante l'utente può visualizzare la descrizione del libro</p>
+    <img src="img/3.jpg">
+  </li>
 </ol>
