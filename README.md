@@ -3,14 +3,13 @@
 <ol>
   <li>
     <p>Implementare una barra di ricerca (Google style) in cui l'utente possa inserire una categoria letteraria</p>
-    <img src="img/1.png">
   </li>
   <li>
     <p>Premendo "invio" o cliccando l'apposito pulsante di ricerca l'utente può visualizzare il titolo, la copertina e gli autori dei libri appartenenti alla categoria richiesta</p>
-    <img src="img/2.png">
   </li>
   <li>
     <p>Attraverso l'apposto pulsante l'utente può visualizzare la descrizione del libro</p>
-    <img src="img/3.png">
   </li>
 </ol>
+
+<img src="img/owly.png">
