@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Momo+Trust+Display&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--Fogli di stile-->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <!--Meta Tags-->
+    <title>Owly</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!--PAGINA DI APPRODO-->
+    <section id="navigation-container" class="navigation-container">
+        <!--logo Owly-->
+        <div class="logo-container">
+            <span class="logo-text">Owly</span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <!--barra di navigazione + button ricera -->
+        <div class="bar-container">
+            <form action="">
+                <input type="textbox" id="navigation-bar" class="navigation-bar" placeholder="Cerca libri per categoria...">
+                <button id="bar-navigation-btn" class="navigation-btn fa-solid fa-magnifying-glass"></button>
+            </form>
+        </div>
+
+        <!--informazioni sul funzionaento del sito-->
+        <div class="abuot-owly-container">
+            <div class="first-point-container point-container">
+                <div class="first-point point">1</div>
+                <div class="first-point-text">Cerca libri per categoria</div>
+            </div>
+
+            <div class="point-container">
+                <div class="second-point point">2</div>
+                <div class="second-point-text">Lasciati ispirare</div>
+            </div>
+        </div>
+    </section>
+
+    <!--SEZIONE... DOPO LA RICERCA-->
+    <section id="results-container" class="results-container none">
+        <!--pulsante riapre la sezione per navigare-->
+        <button id="results-navigation-btn" class="navigation-btn fa-solid fa-magnifying-glass"></button>
+        <div id="books-container" class="books-container">
+            <!--logo-->
+            <div class="logo-container">
+                <span class="logo-text">Owly</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <!--testo di ricerca dell'utente-->
+            <h3  class="research-text">Risultato ricerca per: <span id="research-input" class="research-input">""</span></h3>
+            <div id="cards-container" class="cards-container"></div>
+        </div>
+    </section>
+    <script src="assets/JS/sript.js"></script>
+</body>
+</html>
