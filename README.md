@@ -1,4 +1,4 @@
-# Owly <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/book.svg" width="40" height="40" alt="Book Icon"/>
+# Owly <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/book.svg" width="30" height="30" alt="Book Icon"/>
 ## Linee guida del progetto
 <ol>
   <li>
