@@ -1,0 +1,607 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #cc8ef1;
+    font-family: "Outfit", sans-serif;
+}
+
+
+
+/*PAGINA DI APPRODO*/
+.search-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    /*logo Owly*/
+.logo-text{
+    color: black;
+    display: inline-block;
+}
+
+.logo-container .logo-text{ /*testo Owly*/
+    font-size: 86px;
+    font-weight: 600;
+    line-height: 136px;
+}
+
+.search-container .fa-magnifying-glass{ /*lente di ingrandimento*/
+    font-size: 38px; 
+    color: #fff;
+}
+
+.logo-link{
+    text-decoration: none;
+}
+
+.search-container .logo-link:hover{ /*logo cliccabile*/
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .logo-container .logo-text{ 
+        font-size: 108px;
+        font-weight: 600;
+        line-height: 178px;
+        color: black;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .logo-container .logo-text{ 
+        font-size: 128px;
+        font-weight: 600;
+        line-height: 208px;
+        color: black;
+    }
+}
+
+    
+    /*barra di ricerca*/
+.bar-container{
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.bar-container .search-form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.bar-container .search-bar{ /*barra di navigazione*/
+    width: 65%;
+    background-color: #fff;
+    font-size: 16px;
+    padding: 12px 16px;
+    border-radius: 24px;
+    border: 2px solid #5f4270;
+    margin-right: 8px;
+}
+
+.search-btn{
+    background-color: #5f4270;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.bar-container .search-btn{ /*btn di navigazione*/
+    font-size: 14px;
+    height: auto;
+    padding: 0px 16px;
+    border-radius: 24px;
+}
+
+.bar-container .search-btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px #5f4270;
+}
+
+.bar-container .search-bar:focus{
+    border: 2px solid #5f4270;
+    box-shadow: 0 0 10px #5f4270;
+    outline: none;
+}
+
+@media screen and (min-width: 768px) {
+    .bar-container .search-bar{ /*barra di navigazione*/
+        width: 65%;
+        background-color: #fff;
+        font-size: 22px;
+        padding: 10px 18px;
+    }
+
+    .bar-container .search-btn{ /*btn di navigazione*/
+        font-size: 18px;
+        padding: 0px 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bar-container .search-bar{ /*barra di navigazione*/
+        width: 55%;
+        background-color: #fff;
+        font-size: 24px;
+        padding: 10px 18px;
+    }
+
+    .bar-container .search-btn{ /*btn di navigazione*/
+        font-size: 18px;
+        padding: 0px 18px;
+    }
+}
+
+    /*Informazioni sul sito*/
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6ecfb;
+    border-radius: 24px;
+    padding: 30px 30px;
+    max-width: 80%;
+}
+    /*container sx*/
+.about-container .about-container-sx{
+    display: none;
+}
+    /*container dx*/
+.about-container .about-container-dx{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-container-dx .point-container{
+    display: flex;
+    align-items: center;
+}
+
+.about-container-dx > .first, .about-container-dx .second{
+    margin-bottom: 20px;
+}
+
+.about-container-dx .point{
+    min-width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+    /*colori dei singoli point*/
+.point-container .first-point{
+    background-color: #39b4f7;
+}
+
+.point-container .second-point{
+    background-color: #e6893d;
+}
+
+.point-container .third-point{
+    background-color: #4ad697;
+}
+
+.about-container-dx .point-text{
+    font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    /*informazioni a sinistra*/
+    .about-container .about-container-sx{
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-container-sx .fa-book-open{ /*icona libro*/
+        color: #5f4270;
+        font-size: 36px;
+        margin-bottom: 22px
+    }
+
+    .about-container-sx .about-title{ /*titolo about owly*/
+        font-size: 24px;
+        color: #5f4270;
+        margin-bottom: 8px;
+    }
+
+    .about-container-sx .about-paragraph{ /*paragravo Owly*/
+        font-size: 18px;
+        width: 85%;
+    }
+
+    .about-paragraph > em{
+        color: #5f4270;
+    }
+
+
+    /*informazioni a destra*/
+    .about-container .about-container-dx{
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .about-container{
+        max-width: 50%;
+    }
+}
+
+
+/*PAGINA CATALOGO LIBRI*/
+.results-container{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.results-container .logo-container{
+    margin-top: 30px;
+}
+
+    /*pulsante per tornare alla home*/
+.results-container .search-btn{
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    font-size: 16px;
+    padding: 14px 14px;  
+    border-radius: 50%;
+    color: #fff;
+}
+
+.results-container .search-btn:hover{
+    cursor: pointer;
+}
+
+    /*logo Owly*/
+.results-container .logo-text{ /*testo Owly*/
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+}
+
+.results-container .logo-container .fa-magnifying-glass{ /*lente di ingrandimento*/
+    font-size: 18px; 
+    color: #cc8ef1;
+}
+
+    /*search-query*/
+.search-header{
+    padding: 16px 0px 32px 0px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+    .results-container .logo-text{ /*testo Owly*/
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 72px;
+    }
+
+    .results-container .logo-container .fa-magnifying-glass{ /*lente di ingrandimento*/
+        font-size: 24px; 
+        color: #cc8ef1;
+    }
+
+    .search-header{
+        padding: 24px 0px 36px 0px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+
+    /*pulsante per tornare alla pagina di ricerca*/
+
+/*LOADER*/
+.loader-container{
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-container > .loader{
+    width: 70px;
+    height: 70px;
+    border: 12px solid #f6ecfb;
+    border-top-color: #cc8ef1;
+    border-radius: 50%;
+    animation: loading 1.5s ease infinite;
+}
+
+@keyframes loading{ /*animazione loader*/
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.loader-container .loader-text{
+    padding-top: 24px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/*CATALOGO LIBRI*/
+.books-container{
+    margin-top: 28px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    /*contenitore del singolo lbro*/
+.card{
+    width: 100%;
+    max-width: 350px;
+    min-height: 200px;
+    padding: 12px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    border-radius: 24px;
+    background-color: #f6ecfb;
+}
+
+    /*copertina del libro*/
+.card .book-cover-container{
+    width: 40%;
+    min-height: 180px;
+    position: relative;
+}
+
+.book-cover-container .book-cover{
+    width: 90px;
+    height: 125px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+    /*genere, titolo e autori del libro*/
+.book-info-container .fa-solid{
+    font-size: 24px;
+}
+
+.fa-ghost{
+    color: #39b4f7;
+}
+
+.fa-dragon{
+    color: #2eb03b;
+}
+
+.fa-book{
+    color: #e6893d;
+}
+
+.fa-heart{
+    color: rgb(204, 67, 67);
+}
+
+.fa-ghost{
+    color: #c1c0c2;
+}
+
+.fa-thriller{
+    color: #f8c34f;
+}
+
+.fa-laugh{
+    color: rgb(0, 51, 255);
+}
+
+.fa-map{
+    color: #d271ad;
+}
+
+
+.card .book-info-container{
+    width: 60%;
+    padding: 16px 18px;
+    position: relative;
+}
+
+.book-info-container .book-title{
+    padding-top: 20px;
+    font-size: 16px;  
+}
+
+.book-info-container .book-authors{
+    padding-top: 6px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.book-info-container .description-btn{
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: #5f4270;
+    position: absolute;
+    bottom: 4px;
+    right: 6px;
+}
+
+.book-info-container .description-btn:hover{
+    cursor: pointer;
+}
+
+    /*descrizione del libro (a comparsa)*/
+.description-container{
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+}
+
+.description-container .description-text{
+    font-size: 14px;
+    padding: 16px 6px 12px 6px;
+    word-wrap: break-word;
+}
+
+
+@media screen and (min-width: 768px) {
+    .card{
+        width: 45%;
+        max-width: 350px;
+        min-height: 200px;
+        padding: 8px 16px;
+        display: flex;
+        margin-bottom: 24px;
+        border-radius: 24px;
+        background-color: #f6ecfb;
+    }
+    
+    .books-container{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .description-container{
+        position: fixed; 
+        top:0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+        background-color: rgba(246, 236, 251, 0.7);
+        z-index: 900;
+}
+
+    .description-container .description-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        font-size: 18px;
+        padding: 48px 32px 48px 32px;
+        background-color: #cc8ef1;
+        color: #fff;
+        border-radius: 32px;
+        word-wrap: break-word;
+    }
+
+    .cross-btn{
+        position: absolute;
+        top: 16px;
+        right: 24px;
+        z-index: 1000;
+        font: 28px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+}
+
+
+/*PAGINA DI ERRORE*/
+.error-contaiener{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-title{
+    text-align: center;
+    color: #cc8ef1;
+    font-size: 24px;
+}
+
+.error-img{
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+}
+
+.error-text{
+    text-align: center;
+    font-size: 18px;
+    width: 80%;
+}
+
+.error-btn{
+    margin: 32px auto;
+    padding: 12px 16px;
+    font-size: 16px;
+    background-color: #f6ecfb;
+    border: 1px solid #cc8ef1;
+    border-radius: 24px;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+.error-title{
+    text-align: center;
+    color: #cc8ef1;
+    font-size: 36px;
+}
+
+.error-img{
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+}
+
+.error-text{
+    text-align: center;
+    font-size: 22px;
+    width: 80%;
+}
+
+.error-btn{
+    margin-top: 36px;
+    padding: 12px 16px;
+    font-size: 20px;
+    background-color: #f6ecfb;
+    border: 1px solid #cc8ef1;
+    border-radius: 24px;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+} 
+}
+
+
+
+/*classe assegnata o rimossa per far comaprarire/scomparire una sezione*/
+.display-none{ 
+    display: none;
+}
