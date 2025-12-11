@@ -135,7 +135,7 @@ const searchBtn = document.getElementById('search-btn');
 searchBtn.addEventListener("click", e => {
     e.preventDefault();
     //salvataggio ricerca utente in lowecase (minuscolo)
-    const searchInput = searchBar.value.toLowerCase();
+    const searchInput = searchBar.value.toLowerCase().trim();
     if(searchInput === ''){ //verifica se l'inpurt di ricerca è vuota
         alert(`Inserisci la categoria prima di premere "Invio" o cliccare l'apposito pulsante`); 
     } else{
@@ -233,6 +233,7 @@ homeBtn.addEventListener("click", e => {
         document.getElementById("error-contaiener").classList.add("display-none");
     }
 });
+
 
 
 
